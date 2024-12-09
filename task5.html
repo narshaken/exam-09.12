@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let products = [];
+    
+    function addProduct() {
+        let name = prompt("Өнімнің атауын енгізіңіз:");
+        let price = parseFloat(prompt("Өнімнің бағасын енгізіңіз (сандармен):"));
+        let quantity = parseInt(prompt("Өнімнің санын енгізіңіз (сандармен):"));
+        let category = prompt("Өнімнің категориясын енгізіңіз:");
+        
+        if (!name || isNaN(price) || isNaN(quantity) || !category) {
+            alert("Барлық деректерді дұрыс енгізіңіз!");
+            return;
+        }
+        
+        let product = {
+            name: name,
+            price: price,
+            quantity: quantity,
+            category: category
+        };
+        
+        products.push(product);
+        
+        alert("Өнім сәтті қосылды!");
+        console.log("Қазіргі өнімдер:", products);
+    }
+
+addProduct();
+    </script>
+</body>
+</html>

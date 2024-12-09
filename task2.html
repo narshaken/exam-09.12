@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let shopName = "Бастапқы дүкен";
+    function changeShopName() {
+        const newShopName = prompt("Дүкеннің жаңа атауын енгізіңіз:");
+        if (newShopName && newShopName.trim() !== "") {
+            shopName = newShopName.trim();
+            console.log(`Дүкен атауы жаңартылды: ${shopName}`);
+        } else {
+            console.log("Дүкен атауы өзгертілмеді. Жарамды атау енгізіңіз.");
+        }
+    }
+    changeShopName();
+    </script>
+</body>
+</html>

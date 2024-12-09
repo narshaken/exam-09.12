@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function listProductNames(products) {
+        const productNames = products.map(product => product.name);
+        alert("Өнімдердің тізімі:\n" + productNames.join("\n"));
+    }
+    const products = [
+        { id: 1, name: "Алма", price: 150 },
+        { id: 2, name: "Банан", price: 200 },
+        { id: 3, name: "Сүт", price: 250 }
+    ];
+
+    listProductNames(products);
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function changePhoneNumber() {
+        const newPhoneNumber = prompt("Жаңа телефон нөмірін енгізіңіз:");
+        if (newPhoneNumber && newPhoneNumber.trim() !== "") {
+            phoneNumber = newPhoneNumber.trim();
+            console.log(`Телефон нөмірі жаңартылды: ${phoneNumber}`);
+        } else {
+            console.log(`Телефон нөмірі өзгертілмеді: ${phoneNumber}`);
+        }
+    }
+    changePhoneNumber();
+    </script>
+</body>
+</html>

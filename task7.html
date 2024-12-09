@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function changeShopName() {
+    console.log("duken atauy ozgertildi");
+}
+
+function changePhoneNumber() {
+    console.log("telefon nomer ozgertildi");
+}
+
+function listProductNames() {
+    console.log("onimder atauy");
+}
+
+function addProduct(eShop) {
+    console.log("jana onim qosyldy");
+}
+
+function applyDiscountToCategory() {
+    console.log("jenildik jasaldy");
+}
+
+function menu() {
+    let isRunning = true;
+
+    while (isRunning) {
+        const choice = prompt(`\n menu:\n1. duken atauyn ozgertu\n2. telefon nomer ozgertu\n3. onimder atauyn shygaru \n4. jana onim qosu\n5. jenildik jasau\n6. exit\n\ntandau engiz:`);
+
+        switch (choice) {
+            case "1":
+                changeShopName();
+                break;
+            case "2":
+                changePhoneNumber();
+                break;
+            case "3":
+                listProductNames();
+                break;
+            case "4":
+                addProduct();
+                break;
+            case "5":
+                applyDiscountToCategory();
+                break;
+            case "6":
+                console.log("sau bolynyz!");
+                isRunning = false;
+                break;
+            default:
+                console.log("qate, qaita koriniz");
+        }
+    }
+}
+
+menu();
+
+    </script>
+</body>
+</html>
